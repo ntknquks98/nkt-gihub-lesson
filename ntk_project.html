@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-size: 900px;
+      background: lightblue;
+    }
+    h1 {
+      text-align: center;
+      margin: 0 auto;
+      font-weight: bold;
+      padding: 4px 6px 4px 6px;
+      color: #320d9e;
+      max-width: 800px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0 auto;
+      font-weight: bold;
+      padding: 4px 6px 4px 6px;
+      color: #2949ca;
+      border: 2px solid #177dd7;
+      border-radius: 5px;
+      max-width: 850px;
+    }
+    button {
+      color: Blue;
+      text-align: center;
+      margin: 0px auto;
+      display: block;
+    }
+    button:hover {
+      background-color: lightgrey;
+      color: blue;
+      cursor: pointer;
+    }
+    img {
+      display: block;
+      margin: 15px auto 0 auto;
+    }
+    h5 {
+      text-align: center;
+      margin: 0px auto;
+      font-weight: normal;
+      max-width: 800px;
+    }
+    h6 {
+      margin: 0 auto;
+      text-align: center;
+      font-weight: normal;
+    }
+    a {
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    .here {
+      text-align: center;
+      margin: 0px auto;
+    }
+    .book {
+      text-align: center;
+      margin: 0px auto;
+      font-style: oblique;
+      font-size: large;
+      font-weight: bold;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .ntk {
+      max-width: 900px;
+      border: 4px solid #177dd7;
+      border-radius: 10px;
+      padding: 10px 12px 10px 12px;
+      margin: 20px auto;
+      background: white;
+    }
+  </style>
+  <body>
+    <div class="ntk">
+      <h1>Cooking is Art</h1>
+      <h2>Let's Make Art</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/142/158/original/360_F_716263456_E1IKUnL8sXKtlgLrdamn6hV6J1BEI8yp.jpg?1725472728"
+        width="300"
+      />
+      <hr />
+      <h5>
+        "Cooking is an art, and every plate is canvas. Use your creativity and
+        let your flavors paint a masterpiece." Learn cooking with us and bring
+        Unity, Soul, and Flavor in the room.
+      </h5>
+      <a href="https://stircrazycooking.co.za/cooking-classes/" target="_blank">
+        &#128073; Learn more here
+      </a>
+      <hr />
+
+      <br />
+      <div class="book">Book your Cooking Lesson with US!!</div>
+      <div class="here">&#128071;</div>
+      <br />
+
+      <button>&#127858; Cooking Lessons</button>
+      <br />
+      <h6>This page was built by: <em>Ntokozo Nqukwe</em></h6>
+    </div>
+  </body>
+  <script>
+    alert("Hi, Welcome to Cooking is Art");
+    function cookingLessons() {
+      let name = prompt("What is your first name?");
+      let age = prompt("How old are you?");
+      let email = prompt("Hi " + name + " Please provide your email address");
+
+      if (age >= 16) {
+        alert(
+          "Hi " +
+            name +
+            "! Thank you for signing up. " +
+            "We will be in touch soon"
+        );
+      }
+      if (age < 16) {
+        alert(
+          "Sorry " +
+            name +
+            " Please request one of your parents to sign up for you"
+        );
+      }
+    }
+    let contactButton = document.querySelector("button");
+    contactButton.addEventListener("click", cookingLessons);
+  </script>
+</html>
